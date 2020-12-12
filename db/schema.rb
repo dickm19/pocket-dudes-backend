@@ -10,14 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_11_160459) do
+ActiveRecord::Schema.define(version: 2020_12_12_205445) do
 
-  create_table "foods", force: :cascade do |t|
+  create_table "items", force: :cascade do |t|
     t.string "name"
     t.string "image_url"
     t.integer "user_id"
     t.integer "cost"
     t.integer "points"
+    t.string "type"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "pet_image_urls", force: :cascade do |t|
+    t.string "image_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -28,17 +35,8 @@ ActiveRecord::Schema.define(version: 2020_12_11_160459) do
     t.integer "age"
     t.integer "happiness"
     t.integer "hunger"
-    t.string "image_url"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "toys", force: :cascade do |t|
-    t.string "name"
-    t.string "image_url"
-    t.integer "user_id"
-    t.integer "cost"
-    t.integer "points"
+    t.integer "pet_image_url_id"
+    t.string "color"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

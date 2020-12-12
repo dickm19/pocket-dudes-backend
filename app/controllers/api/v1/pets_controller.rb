@@ -23,7 +23,7 @@ class Api::V1::PetsController < ApplicationController
     private
 
     def pet_params
-        params.permit(:user_id, :name, :age, :happiness, :hunger, :image_url)
+        params.permit(:user_id, :name, :age, :happiness, :hunger, :pet_image_url)
     end
 
 end
