@@ -2,7 +2,9 @@ class Api::V1::UsersController < ApplicationController
 
     def show
         user = User.find(params[:id])
-        render json: {user: UserSerializer.new(user)}
+        pets = user.pets
+        pets = pets.map { |pet| PetSerializer.new(pet)}
+        render json: {user: UserSerializer.new(user), pets: pets}
     end
 
     def index

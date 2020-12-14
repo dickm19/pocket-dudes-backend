@@ -7,7 +7,6 @@ class CreatePets < ActiveRecord::Migration[6.1]
       t.integer :happiness
       t.integer :hunger
       t.integer :pet_image_url_id
-      t.string :color
       t.timestamps
     end
   end

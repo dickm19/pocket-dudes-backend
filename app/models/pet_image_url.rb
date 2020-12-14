@@ -1,3 +1,3 @@
 class PetImageUrl < ApplicationRecord
-    belongs_to :pet
+    has_many :pets
 end

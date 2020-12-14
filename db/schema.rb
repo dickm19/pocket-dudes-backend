@@ -36,7 +36,6 @@ ActiveRecord::Schema.define(version: 2020_12_12_205445) do
     t.integer "happiness"
     t.integer "hunger"
     t.integer "pet_image_url_id"
-    t.string "color"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
