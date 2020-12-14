@@ -2,13 +2,13 @@ class Api::V1::PetsController < ApplicationController
       
     def index
         pets = Pet.all 
-        render json: pets
+        render json: pets, each_serialize: PetSerializer
     end
 
     def create
        pet = Pet.create(pet_params) 
        if pet.valid?
-            render json: pet, status: :created
+            render json: {pet: PetSerializer.new(pet)}, status: :created
        else
             render json: { error: pet.errors.full_messages }, status: :not_acceptable 
        end

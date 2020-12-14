@@ -2,12 +2,12 @@ class Api::V1::UsersController < ApplicationController
 
     def show
         user = User.find(params[:id])
-        render json: user
+        render json: {user: UserSerializer.new(user)}
     end
 
     def index
         users = User.all
-        render json: users
+        render json: users, each_serializer: UserSerializer
     end
 
     def update
@@ -24,7 +24,7 @@ class Api::V1::UsersController < ApplicationController
         user = User.create(user_params)
         if user.valid?
             token = encode_token(user_id: user.id)
-            render json: user
+            render json: {user: UserSerializer.new(user)}
         else
             render json: { error: user.errors.full_messages }, status: :not_acceptable
         end
