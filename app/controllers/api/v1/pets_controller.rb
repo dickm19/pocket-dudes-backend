@@ -5,6 +5,10 @@ class Api::V1::PetsController < ApplicationController
         render json: pets, each_serialize: PetSerializer
     end
 
+    def show
+        pet = Pet.find(params[:id])
+        render json: {pet: PetSerializer.new(pet)}
+    end
     def create
        pet = Pet.create(pet_params) 
        if pet.valid?
@@ -12,6 +16,16 @@ class Api::V1::PetsController < ApplicationController
        else
             render json: { error: pet.errors.full_messages }, status: :not_acceptable 
        end
+    end
+
+    def update
+        pet = Pet.find(params[:id])
+        pet.update(pet_params)
+        if pet.save
+            render json: pet
+        else
+            render json: { errors: pet.errors.full_messages }, status: :unprocessible_entity
+        end
     end
 
     def destroy
