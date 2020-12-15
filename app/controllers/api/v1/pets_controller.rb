@@ -9,6 +9,7 @@ class Api::V1::PetsController < ApplicationController
         pet = Pet.find(params[:id])
         render json: {pet: PetSerializer.new(pet)}
     end
+
     def create
        pet = Pet.create(pet_params) 
        if pet.valid?
@@ -19,13 +20,11 @@ class Api::V1::PetsController < ApplicationController
     end
 
     def update
-        pet = Pet.find(params[:id])
+        pet = Pet.find_by(id: params[:id])
+        # byebug
         pet.update(pet_params)
-        if pet.save
-            render json: pet
-        else
-            render json: { errors: pet.errors.full_messages }, status: :unprocessible_entity
-        end
+        pet.save
+        render json: pet
     end
 
     def destroy
@@ -37,7 +36,7 @@ class Api::V1::PetsController < ApplicationController
     private
 
     def pet_params
-        params.permit(:user_id, :name, :age, :happiness, :hunger, :pet_image_url)
+        params.permit(:name, :user_id, :age, :happiness, :hunger, :pet_image_url_id)
     end
 
 end

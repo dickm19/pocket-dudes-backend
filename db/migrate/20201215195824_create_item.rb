@@ -1,12 +1,12 @@
-class Items < ActiveRecord::Migration[6.1]
+class CreateItem < ActiveRecord::Migration[6.1]
   def change
     create_table :items do |t|
       t.string :name
-      t.string :image_url
-      t.integer :user_id
+      t.string :image
       t.integer :cost
       t.integer :points
-      t.string :type
+      t.references :user, null: false, foreign_key: true
+
       t.timestamps
     end
   end
