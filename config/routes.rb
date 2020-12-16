@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :users, only: [:show, :create, :index, :update, :destroy]
       resources :pets, only: [:show, :create, :index, :update, :destroy]
-      resources :items, only: [:show, :index, :create]
+      resources :items, only: [:show, :index, :create, :update]
       resources :pet_image_urls, only: [:index, :show]
     end
   end

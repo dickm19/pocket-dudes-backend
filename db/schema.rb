@@ -16,10 +16,9 @@ ActiveRecord::Schema.define(version: 2020_12_15_195824) do
     t.string "name"
     t.string "image"
     t.string "kind"
-    t.integer "user_id", null: false
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["user_id"], name: "index_items_on_user_id"
   end
 
   create_table "pet_image_urls", force: :cascade do |t|
@@ -48,7 +47,6 @@ ActiveRecord::Schema.define(version: 2020_12_15_195824) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "items", "users"
   add_foreign_key "pets", "pet_image_urls"
   add_foreign_key "pets", "users"
 end

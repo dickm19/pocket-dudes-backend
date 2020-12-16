@@ -98,20 +98,20 @@ green_bubb = Pet.create(name: 'Green Bubb', user_id: 1, age: 1, happiness: 10, h
 
 
 ##FOOD
-Item.create(name: 'Cookie', image: 'https://i.ibb.co/Mg9n10T/Cookie.png', kind: 'food', user_id: 1)
-Item.create(name: 'Sashimi', image: 'https://i.ibb.co/42YWTX0/Sashimi.png', kind: 'food', user_id: 1 )
-Item.create(name: 'Pretzel', image: 'https://i.ibb.co/sVv7qks/Pretzel.png', kind: 'food', user_id: 1)
-Item.create(name: 'Onion', image: 'https://i.ibb.co/dpr8Xgw/Onion.png', kind: 'food', user_id: 1)
-Item.create(name: 'Watermelon', image: 'https://i.ibb.co/6tx5p8K/Melon-Water.png', kind: 'food', user_id: 1)
-Item.create(name: 'Chicken', image: 'https://i.ibb.co/1Kq399s/Chicken-Leg.png', kind: 'food', user_id: 1)
+Item.create(name: 'Cookie', image: 'https://i.ibb.co/Mg9n10T/Cookie.png', kind: 'food')
+Item.create(name: 'Sashimi', image: 'https://i.ibb.co/42YWTX0/Sashimi.png', kind: 'food' )
+Item.create(name: 'Pretzel', image: 'https://i.ibb.co/sVv7qks/Pretzel.png', kind: 'food')
+Item.create(name: 'Onion', image: 'https://i.ibb.co/dpr8Xgw/Onion.png', kind: 'food')
+Item.create(name: 'Watermelon', image: 'https://i.ibb.co/6tx5p8K/Melon-Water.png', kind: 'food')
+Item.create(name: 'Chicken', image: 'https://i.ibb.co/1Kq399s/Chicken-Leg.png', kind: 'food')
 Item.create(name: 'Cherry', image: 'https://i.ibb.co/L9rdCpX/Cherry.png', kind: 'food', user_id: 1)
-Item.create(name: 'Bread', image: 'https://i.ibb.co/nMshjgB/Bread.png', kind: 'food', user_id: 1)
-Item.create(name: 'Avocado', image: 'https://i.ibb.co/xqVtSh9/Avocado.png', kind: 'food', user_id: 1)
+Item.create(name: 'Bread', image: 'https://i.ibb.co/nMshjgB/Bread.png', kind: 'food')
+Item.create(name: 'Avocado', image: 'https://i.ibb.co/xqVtSh9/Avocado.png', kind: 'food')
 Item.create(name: 'Apple', image: 'https://i.ibb.co/fpPJTrh/Apple.png', kind: 'food', user_id: 1)
 
 ##TOYS
-Item.create(name: 'Covid Ball', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBxu6U1oMP0xmeOH8bYnqxuHDwyJyJ12cE1A&usqp=CAU', kind: 'toy', user_id: 1)
-Item.create(name: 'Fire Boy', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWyLm3Sa373uXSxgY5uWb3MEznREQfT78Q-w&usqp=CAU', kind: 'toy', user_id: 1)
-Item.create(name: 'Lobster Toy', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVq3GPSgW_XlTRkzwacLg50TJwKqKu1HBI7g&usqp=CAU')
+Item.create(name: 'Covid Ball', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBxu6U1oMP0xmeOH8bYnqxuHDwyJyJ12cE1A&usqp=CAU', kind: 'toy')
+Item.create(name: 'Fire Boy', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWyLm3Sa373uXSxgY5uWb3MEznREQfT78Q-w&usqp=CAU', kind: 'toy')
+Item.create(name: 'Lobster Toy', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVq3GPSgW_XlTRkzwacLg50TJwKqKu1HBI7g&usqp=CAU', kind: 'toy')
 Item.create(name: 'Rope Toy', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoEeK-hNuRFJX-MgJol2-RivavwAZ3z8PVRw&usqp=CAU', kind: 'toy', user_id: 1)
-Item.create(name: 'Knot Ball', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxQqqgos9tt1Kpwmovtdf3_vVp7jUmpMSxw&usqp=CAU', kind: 'toy', user_id: 1)
+Item.create(name: 'Knot Ball', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxQqqgos9tt1Kpwmovtdf3_vVp7jUmpMSxw&usqp=CAU', kind: 'toy')

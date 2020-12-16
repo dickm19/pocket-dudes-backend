@@ -11,18 +11,23 @@ class Api::V1::ItemsController < ApplicationController
     end
 
     def create
-        item = Item.create(item_params) 
-        if item.valid?
-             render json: {item: ItemSerializer.new(item)}, status: :created
-        else
-             render json: { error: item.errors.full_messages }, status: :not_acceptable 
-        end
+        item = Item.new(item_params)
+        item.save
+        render json: {item: ItemSerializer.new(item)}, status: :created
+       
      end
  
+
+     def update
+        item = Item.find_by(id: params[:id])
+        item.update(item_params)
+        item.save
+        render json: item
+    end
 
     private
 
     def item_params
-        params.permit(:name, :user_id, :image, :kind)
+        params.require(:item).permit!
     end
 end
