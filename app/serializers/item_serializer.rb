@@ -1,3 +1,3 @@
 class ItemSerializer < ActiveModel::Serializer
-    attributes :name, :pet_image, :cost, :points
+    attributes :name, :image, :kind, :user_id
 end
