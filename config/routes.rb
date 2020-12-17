@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       resources :pets, only: [:show, :create, :index, :update, :destroy]
       resources :items, only: [:show, :index, :create, :update]
       resources :pet_image_urls, only: [:index, :show]
+      resources :user_items, only: [:show, :index, :create, :update, :destroy]
     end
   end
 end
