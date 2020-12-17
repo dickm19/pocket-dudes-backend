@@ -12,41 +12,40 @@
 
 ActiveRecord::Schema.define(version: 2020_12_15_195824) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "items", force: :cascade do |t|
-    t.string "name"
-    t.string "image"
-    t.string "kind"
+    t.text "name"
+    t.text "image"
+    t.text "kind"
     t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "pet_image_urls", force: :cascade do |t|
-    t.string "image_url"
+    t.text "image_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "pets", force: :cascade do |t|
-    t.string "name"
+    t.text "name"
     t.integer "age"
     t.integer "happiness"
     t.integer "hunger"
-    t.integer "pet_image_url_id", null: false
-    t.integer "user_id", null: false
+    t.integer "pet_image_url_id"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["pet_image_url_id"], name: "index_pets_on_pet_image_url_id"
-    t.index ["user_id"], name: "index_pets_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "name"
-    t.string "username"
+    t.text "name"
+    t.text "username"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "pets", "pet_image_urls"
-  add_foreign_key "pets", "users"
 end
