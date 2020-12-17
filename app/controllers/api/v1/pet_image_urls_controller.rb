@@ -6,7 +6,7 @@ class Api::V1::PetImageUrlsController < ApplicationController
     end
     def show
         image = PetImageUrl.find(params[:id])
-        render json: image: PetImageSerializer.new(image)
+        render json: {image: PetImageSerializer.new(image)}
     end
 
 end
