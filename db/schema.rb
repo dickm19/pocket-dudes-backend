@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2020_12_17_185523) do
     t.text "name"
     t.text "image"
     t.text "kind"
+    t.boolean "bought"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
