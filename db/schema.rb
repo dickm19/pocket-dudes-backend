@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 2020_12_17_185523) do
     t.integer "hunger"
     t.integer "pet_image_url_id"
     t.integer "user_id"
+    t.boolean "current_pet"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -51,6 +52,8 @@ ActiveRecord::Schema.define(version: 2020_12_17_185523) do
   create_table "users", force: :cascade do |t|
     t.text "name"
     t.text "username"
+    t.integer "points"
+    t.integer "high_score"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

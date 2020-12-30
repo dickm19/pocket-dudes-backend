@@ -1,6 +1,6 @@
 
 
-user = User.create(name: 'Mary', username: 'maryc')
+user = User.create(name: 'Mary', username: 'maryc', points: 0, high_score: 0)
 
 ###Bubb images
 blue_bubb_image = PetImageUrl.create(image_url: 'https://i.ibb.co/27QyJqF/blueBubb.png')
