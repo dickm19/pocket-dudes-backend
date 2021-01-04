@@ -122,3 +122,9 @@ Item.create(name: 'Fire Boy', image: 'https://encrypted-tbn0.gstatic.com/images?
 Item.create(name: 'Lobster Toy', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVq3GPSgW_XlTRkzwacLg50TJwKqKu1HBI7g&usqp=CAU', cost: 10, kind: 'toy', bought: false)
 Item.create(name: 'Rope Toy', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoEeK-hNuRFJX-MgJol2-RivavwAZ3z8PVRw&usqp=CAU', cost: 10, kind: 'toy', bought: false)
 Item.create(name: 'Knot Ball', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxQqqgos9tt1Kpwmovtdf3_vVp7jUmpMSxw&usqp=CAU', cost: 10, kind: 'toy', bought: false)
+
+Item.create(name: 'Kong', image: 'https://i.ibb.co/10LzBbz/kong.jpg', cost: 10, kind: 'toy', bought: false)
+Item.create(name: 'OctoBoy' , image: 'https://i.ibb.co/kxJXzzv/octoboy.jpg', cost: 10, kind: 'toy', bought: false)
+Item.create(name: 'Bone', image: 'https://i.ibb.co/2ck4Tf9/bone.jpg', cost: 10, kind: 'toy', bought: false)
+Item.create(name: 'Dragon', image: 'https://i.ibb.co/xHWhmNy/dragon.jpg' , cost: 10, kind: 'toy', bought: false)
+Item.create(name: 'Tug Toy', image: 'https://i.ibb.co/mFP4XdQ/tug-toy.jpg', cost: 10, kind: 'toy', bought: false)
