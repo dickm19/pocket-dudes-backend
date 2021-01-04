@@ -1,57 +1,27 @@
 
 
-user = User.create(name: 'Mary', username: 'maryc', points: 100, high_score: 0)
+user = User.create(name: 'Mary', username: 'maryc', points: 50, high_score: 0)
 
-###Bubb images
-blue_bubb_image = PetImageUrl.create(image_url: 'https://i.ibb.co/27QyJqF/blueBubb.png')
-
-green_bubb_image = PetImageUrl.create(image_url: 'https://i.ibb.co/XkRHH4b/greenBub.png')
-
-pink_bubb_image = PetImageUrl.create(image_url: 'https://i.ibb.co/9pGXVVY/pinkBubb.png')
-
-yellow_bubb_image = PetImageUrl.create(image_url: 'https://i.ibb.co/xYJLf36/yellow-Bubb.png')
-
-red_bubb_image = PetImageUrl.create(image_url: 'https://i.ibb.co/KGhdb40/redBubb.png')
+###Bubb image
+PetImageUrl.create(image_url: 'https://i.ibb.co/RBqwZNn/yellow-Bubb-Cut.png')
 
 
-# ###Morp images
-blue_morp_image = PetImageUrl.create(image_url: 'https://i.ibb.co/SBfKdHh/blueMorp.png')
+# ###Morp image
+PetImageUrl.create(image_url: 'https://i.ibb.co/YbMVqbq/blue-Morp-Cut.png')
 
-green_morp_image = PetImageUrl.create(image_url: 'https://i.ibb.co/DD2XQZx/green-Morp.png' )
 
-pink_morp_image = PetImageUrl.create(image_url: 'https://i.ibb.co/M2gWcQF/pinkMorp.png')
+# ###Florp image
+PetImageUrl.create(image_url: 'https://i.ibb.co/9n0n4hh/pink-Florp-Cut.png')
 
-yellow_morp_image = PetImageUrl.create(image_url: 'https://i.ibb.co/tMJx1HP/yellow-Morp.png')
 
-red_morp_image = PetImageUrl.create(image_url: 'https://i.ibb.co/TL6w6Qj/redMorp.png')
-
-# ###Florp images
-blue_florp_image = PetImageUrl.create(image_url: 'https://i.ibb.co/RYY7C97/blue-Florp.png')
-
-green_florp_image = PetImageUrl.create(image_url: 'https://i.ibb.co/JjNs1W8/green-Florp.png' )
-
-pink_florp_image = PetImageUrl.create(image_url: 'https://i.ibb.co/m65g3Cv/pink-Florp.png' )
-
-yellow_florp_image = PetImageUrl.create(image_url: 'https://i.ibb.co/MCDXh7H/yellow-Florp.png')
-
-red_florp_image = PetImageUrl.create(image_url: 'https://i.ibb.co/m8df4b0/redFlorp.png')
-
-# ###beepo images
-blue_beepo_image = PetImageUrl.create(image_url: 'https://i.ibb.co/0YqgzRH/blue-Beepo.png' )
-
-green_beepo_image = PetImageUrl.create( image_url: 'https://i.ibb.co/HHK9rQP/green-Beepo.png')
-
-pink_beepo_image = PetImageUrl.create(image_url: 'https://i.ibb.co/GQtbnZ0/pink-Beepo.png')
-
-yellow_beepo_image = PetImageUrl.create(image_url: 'https://i.ibb.co/hHXrTHB/yellow-Beepo.png' )
-
-red_beepo_image = PetImageUrl.create(image_url: 'https://i.ibb.co/jhLv8J0/redBeepo.png' )
+# ###beepo image
+PetImageUrl.create(image_url: 'https://i.ibb.co/3FMY5HF/red-Beepo-Cut.png' )
 
 
 ## Blorp image
-blorp_image = PetImageUrl.create(image_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR2eYXtN4SIPlTJx3V-sWc74_oQxwygNTn8A&usqp=CAU')
+blorp_image = PetImageUrl.create(image_url: 'https://i.ibb.co/qpzkqHB/blorpCut.png')
 
-yuy_image = PetImageUrl.create(image_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsHNbRazewdTMrrZbBgVNdlLYRiKp7oa-f2g&usqp=CAU')
+yuy_image = PetImageUrl.create(image_url: 'https://i.ibb.co/rdszWxp/yuyCut.png')
 
 
 ###Bubbs
@@ -117,14 +87,16 @@ Item.create(name: 'Avocado', image: 'https://i.ibb.co/xqVtSh9/Avocado.png', cost
 Item.create(name: 'Apple', image: 'https://i.ibb.co/fpPJTrh/Apple.png', cost: 5, kind: 'food', bought: false)
 
 ##TOYS
-Item.create(name: 'Covid Ball', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBxu6U1oMP0xmeOH8bYnqxuHDwyJyJ12cE1A&usqp=CAU', cost: 10, kind: 'toy', bought: false)
-Item.create(name: 'Fire Boy', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWyLm3Sa373uXSxgY5uWb3MEznREQfT78Q-w&usqp=CAU', cost: 10, kind: 'toy', bought: false)
-Item.create(name: 'Lobster Toy', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVq3GPSgW_XlTRkzwacLg50TJwKqKu1HBI7g&usqp=CAU', cost: 10, kind: 'toy', bought: false)
-Item.create(name: 'Rope Toy', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoEeK-hNuRFJX-MgJol2-RivavwAZ3z8PVRw&usqp=CAU', cost: 10, kind: 'toy', bought: false)
-Item.create(name: 'Knot Ball', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxQqqgos9tt1Kpwmovtdf3_vVp7jUmpMSxw&usqp=CAU', cost: 10, kind: 'toy', bought: false)
+Item.create(name: 'Covid Ball', image: 'https://i.ibb.co/WW3bcR1/covid-ball.png', cost: 10, kind: 'toy', bought: false)
+Item.create(name: 'Fire Boy', image: 'https://i.ibb.co/JvWFXHr/fire-boy.png', cost: 10, kind: 'toy', bought: false)
+Item.create(name: 'Lobster Toy', image: 'https://i.ibb.co/gTFGBH3/lobster-toy-1.png', cost: 10, kind: 'toy', bought: false)
+Item.create(name: 'Rope Toy', image: 'https://i.ibb.co/7C4bcFb/rope-toy.png', cost: 10, kind: 'toy', bought: false)
+Item.create(name: 'Knot Ball', image: 'https://i.ibb.co/Y05JnLD/knot-ball.png', cost: 10, kind: 'toy', bought: false)
 
-Item.create(name: 'Kong', image: 'https://i.ibb.co/10LzBbz/kong.jpg', cost: 10, kind: 'toy', bought: false)
-Item.create(name: 'OctoBoy' , image: 'https://i.ibb.co/kxJXzzv/octoboy.jpg', cost: 10, kind: 'toy', bought: false)
-Item.create(name: 'Bone', image: 'https://i.ibb.co/2ck4Tf9/bone.jpg', cost: 10, kind: 'toy', bought: false)
-Item.create(name: 'Dragon', image: 'https://i.ibb.co/xHWhmNy/dragon.jpg' , cost: 10, kind: 'toy', bought: false)
-Item.create(name: 'Tug Toy', image: 'https://i.ibb.co/mFP4XdQ/tug-toy.jpg', cost: 10, kind: 'toy', bought: false)
+Item.create(name: 'Kong', image: 'https://i.ibb.co/zfW2tRh/kong.png', cost: 10, kind: 'toy', bought: false)
+Item.create(name: 'OctoBoy' , image: 'https://i.ibb.co/FxbnsYk/octoboy.png', cost: 10, kind: 'toy', bought: false)
+Item.create(name: 'Bone', image: 'https://i.ibb.co/THVzpb3/bone.png', cost: 10, kind: 'toy', bought: false)
+
+Item.create(name: 'Dragon', image: 'https://i.ibb.co/fNTmXYc/dragon.png' , cost: 10, kind: 'toy', bought: false)
+
+Item.create(name: 'Tug Toy', image: 'https://i.ibb.co/ZYYhLQT/tug-toy.png', cost: 10, kind: 'toy', bought: false)
