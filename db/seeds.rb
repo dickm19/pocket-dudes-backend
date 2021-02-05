@@ -1,9 +1,9 @@
 
 
-user = User.create(name: 'Mary', username: 'maryc', points: 50, high_score: 0)
+user = User.create(name: 'Mary', username: 'maryc', points: 0, high_score: 0)
 
 ###Bubb image
-PetImageUrl.create(image_url: 'https://i.ibb.co/RBqwZNn/yellow-Bubb-Cut.png')
+yellow_bubb_image = PetImageUrl.create(image_url: 'https://i.ibb.co/RBqwZNn/yellow-Bubb-Cut.png')
 
 
 # ###Morp image
@@ -31,7 +31,7 @@ yuy_image = PetImageUrl.create(image_url: 'https://i.ibb.co/rdszWxp/yuyCut.png')
 
 # pink_bubb = Pet.create(name: 'Pink Bubb', user_id: 1, age: 1, happiness: 10, hunger: 10,pet_image_url_id: pink_bubb_image.id)
 
-# yellow_bubb = Pet.create(name: 'Yellow Bubb', user_id: 1, age: 1, happiness: 10, hunger: 10, pet_image_url_id: yellow_bubb_image.id )
+yellow_bubb = Pet.create(name: 'Bubb', user_id: 1, age: 1, happiness: 0, hunger: 0, pet_image_url_id: yellow_bubb_image.id )
 
 #  red_bubb = Pet.create(name: 'Red Bubb', user_id: 1, age: 1, happiness: 10, hunger: 10, pet_image_url_id: red_bubb_image.id )
 
